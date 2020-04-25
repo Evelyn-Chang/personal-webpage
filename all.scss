@@ -95,6 +95,7 @@
 	p {
 		@include fontSmall;
 		margin-bottom: 48px;
+		font-style: normal;
 	}
 	.belowPhoto {
 		margin-top: 40px;
@@ -122,6 +123,7 @@
 		@include fontSmall;
 		margin-bottom: 48px;
 		color: #000;
+		font-style: normal;
 	}
 	ul {
 		margin-bottom: 56px;
@@ -133,6 +135,7 @@
 		}
 		span {
 			@include fontSmall;
+			font-style: normal;
 		}
 	}
 }
