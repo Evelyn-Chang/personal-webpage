@@ -1,0 +1,27 @@
+$primary: #fff;
+$color-point: #891818;
+
+@mixin fontTitle {
+	font-size: 64px;
+	line-height: 75px;
+}
+
+@mixin fontLarge {
+	font-size: 24px;
+	line-height: 42px;
+}
+
+@mixin fontMiddle {
+	font-size: 24px;
+	line-height: 36px;
+}
+
+@mixin fontSmall {
+	font-size: 20px;
+	line-height: 42px;
+}
+
+@mixin bg-size {
+	background-size: cover;
+	background-position: center center;
+}

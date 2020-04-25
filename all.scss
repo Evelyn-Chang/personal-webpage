@@ -1,0 +1,154 @@
+@import "scss/main";
+@import "scss/base";
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+// banner
+.banner {
+	background-image: url(images/banner.png);
+	height: 960px;
+	@include bg-size;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 64px;
+
+	.bannerInside {
+		padding-top: 140px;
+
+		h1 {
+			font-size: 80px;
+			line-height: 94px;
+			margin-bottom: 32px;
+		}
+		p {
+			@include fontLarge;
+		}
+		.bannerIcon {
+			margin-top: 48px;
+			justify-content: space-around;
+		}
+	}
+}
+
+// header
+.header {
+	text-align: center;
+	margin-bottom: 56px;
+	color: #000;
+
+	h2 {
+		@include fontTitle;
+		margin-bottom: 40px;
+	}
+	img {
+		margin-bottom: 24px;
+	}
+	p {
+		@include fontLarge;
+		margin-bottom: 8px;
+	}
+	ul {
+		@include fontLarge;
+		border-top: 1px solid #000;
+		max-width: 384px;
+		margin: 0 auto;
+		margin-top: 12px;
+
+		li {
+			padding-top: 32px;
+		}
+		.point {
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			background: $color-point;
+			border-radius: 50%;
+			margin-right: 16px;
+		}
+	}
+}
+
+// brand
+.brand {
+	background-color: #000;
+	text-align: center;
+	padding-top: 64px;
+	padding-bottom: 160px;
+	margin-bottom: 64px;
+
+	h2 {
+		@include fontTitle;
+		margin-bottom: 16px;
+	}
+	h3 {
+		@include fontLarge;
+		margin-bottom: 32px;
+	}
+	p {
+		@include fontSmall;
+		margin-bottom: 48px;
+	}
+	.belowPhoto {
+		margin-top: 40px;
+
+		img {
+			margin-right: 24px;
+		}
+	}
+}
+
+// works
+.works {
+	padding-bottom: 106px;
+	text-align: center;
+	background-image: url(images/photo-1561291386-5be50364cfb5.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+
+	h2 {
+		@include fontTitle;
+		margin-bottom: 24px;
+		color: #000;
+	}
+	p {
+		@include fontSmall;
+		margin-bottom: 48px;
+		color: #000;
+	}
+	ul {
+		margin-bottom: 56px;
+		color: $primary;
+
+		img {
+			margin-right: 24px;
+			margin-bottom: 16px;
+		}
+		span {
+			@include fontSmall;
+		}
+	}
+}
+
+// footer
+.footer {
+	background: #000;
+	padding: 64px;
+	text-align: center;
+
+	h2 {
+		@include fontTitle;
+		margin-bottom: 16px;
+	}
+	p {
+		@include fontMiddle;
+		margin-bottom: 16px;
+	}
+}
